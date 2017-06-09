@@ -1,7 +1,29 @@
 # TieredList
 A simple data structure for grouping items based on tiered integer ranges.
 
-## Example usage
+## Simple example
+
+Set thresholds:
+
+```
+import TieredLists
+
+tiers = [2, 4, 8, 16]
+tl = TieredLists(tiers)
+```
+
+Add items:
+
+```
+path_1 = '/a/short/url'
+path_2 = '/the/quick/brown/fox/is/dead'
+path_3 = '/news/bangor/2017/06/05/reality-winner/'
+tl.add(2, path_1)
+tl.add(20, path_2)
+```
+
+
+## Practical usage
 
 Here we can determine how many stories are performing at different levels:
 
